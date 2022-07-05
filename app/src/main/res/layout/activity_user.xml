@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UserActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_photo"
+        style="@style/UserImage"
+        android:src="@drawable/me" />
+
+    <TextView
+        style="@style/UserTextView.Name"
+        android:text="@string/my_name" />
+
+    <TextView
+        style="@style/UserTextView.Email"
+        android:text="@string/my_email" />
+
+</LinearLayout>

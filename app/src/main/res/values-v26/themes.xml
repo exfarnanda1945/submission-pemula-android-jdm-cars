@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewCarListName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:background">@color/red</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:paddingVertical">2dp</item>
+    </style>
+
+    <style name="TextViewCarDetail.Title.ShortSpec">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingHorizontal"></item>
+    </style>
+</resources>

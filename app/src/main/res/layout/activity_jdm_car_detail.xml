@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JdmCarDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/car_detail_image"
+            style="@style/CarDetailImage"
+            android:contentDescription="@string/image_detail"
+            tools:src="@drawable/civic_type_r" />
+
+        <TextView
+            android:id="@+id/tv_car_name_detail"
+            style="@style/TextViewCarDetail.Title.CarName"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"
+            tools:text="Honda Civic Type R" />
+
+        <TextView
+            style="@style/TextViewCarDetail.Title.ShortSpec"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="@string/short_specs" />
+
+        <TableLayout style="@style/TableLayout">
+
+            <TableRow style="@style/TableRow.Brand">
+
+                <TextView
+                    style="@style/TableRowTv"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/brand" />
+
+                <TextView
+                    style="@style/TableRowTv.Colon"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tv_car_brand"
+                    style="@style/TableRowTv.DetailContent"
+                    android:text="@string/detail_content" />
+            </TableRow>
+
+            <TableRow style="@style/TableRow.EngineCode_DWS">
+
+                <TextView
+                    style="@style/TableRowTv"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/engine_code" />
+
+                <TextView
+                    style="@style/TableRowTv.Colon"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tv_engine_code"
+                    style="@style/TableRowTv.DetailContent"
+                    android:text="@string/detail_content" />
+            </TableRow>
+
+            <TableRow style="@style/TableRow.EngineCode_DWS">
+
+                <TextView
+                    style="@style/TableRowTv"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/drive_wheel_system" />
+
+                <TextView
+                    style="@style/TableRowTv.Colon"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tv_dws"
+                    style="@style/TableRowTv.DetailContent"
+                    android:text="@string/detail_content" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/TextViewCarDetail.Title.Description"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/TextViewCarDetail.Desc"
+            tools:text="@string/lorem_ipsum" />
+    </LinearLayout>
+
+</ScrollView>

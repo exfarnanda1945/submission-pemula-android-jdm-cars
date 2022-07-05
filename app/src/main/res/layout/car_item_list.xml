@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/img_car_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_car_list"
+        android:scaleType="fitXY"
+        tools:src="@drawable/civic_type_r" />
+
+    <TextView
+        android:id="@+id/tv_list_car_num"
+        style="@style/TextViewCarList.Num"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_list_car_name"
+        style="@style/TextViewCarList.Name"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="2dp"
+        tools:text="Honda Civic Type R" />
+</FrameLayout>

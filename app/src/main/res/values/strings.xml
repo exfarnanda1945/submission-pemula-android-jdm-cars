@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Submission Dicoding JDM Cars</string>
+    <string name="user">user</string>
+    <string name="short_specs">Short Specs</string>
+    <string name="image_detail">Image Detail</string>
+    <string name="brand">Brand</string>
+    <string name="colon">:</string>
+    <string name="detail_content">Detail Content</string>
+    <string name="engine_code">Engine Code</string>
+    <string name="drive_wheel_system">Drive Wheel System</string>
+    <string name="description">Description</string>
+    <string name="my_name">Exfar Nanda Micola</string>
+    <string name="my_email">exfarnanda1945@gmail.com</string>
+    <string name="image_car_list">Image Car List</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="splash_screen">JDM Car Go brr....</string>
+</resources>
