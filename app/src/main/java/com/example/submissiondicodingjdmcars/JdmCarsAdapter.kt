@@ -1,5 +1,6 @@
 package com.example.submissiondicodingjdmcars
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,6 +29,7 @@ class JdmCarsAdapter(private val carList: ArrayList<JdmCarsModel>) :
         this.onItemClickCallback = action
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val (image, carName, carBrand) = carList[position]
 
