@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.submissiondicodingjdmcars.databinding.ActivityJdmCarDetailBinding
 
 class JdmCarDetailActivity : AppCompatActivity() {
     companion object {
@@ -16,10 +17,13 @@ class JdmCarDetailActivity : AppCompatActivity() {
         const val CAR_DWS: String = "extra_car_dws"
     }
 
+    private lateinit var binding:ActivityJdmCarDetailBinding
+
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityJdmCarDetailBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_jdm_car_detail)
+        setContentView(binding.root)
 
         val appBar = supportActionBar
 
@@ -28,12 +32,12 @@ class JdmCarDetailActivity : AppCompatActivity() {
             appBar.setDisplayHomeAsUpEnabled(true)
         }
 
-        val carImage: ImageView = findViewById(R.id.car_detail_image)
-        val carName: TextView = findViewById(R.id.tv_car_name_detail)
-        val carBrand: TextView = findViewById(R.id.tv_car_brand)
-        val carDesc: TextView = findViewById(R.id.tv_description)
-        val carEngineCode: TextView = findViewById(R.id.tv_engine_code)
-        val carDws: TextView = findViewById(R.id.tv_dws)
+        val carImage: ImageView = binding.carDetailImage
+        val carName: TextView = binding.tvCarNameDetail
+        val carBrand: TextView = binding.tvCarBrand
+        val carDesc: TextView = binding.tvDescription
+        val carEngineCode: TextView = binding.tvEngineCode
+        val carDws: TextView = binding.tvDws
 
         val getCarBrand = intent.getStringExtra(CAR_BRAND)
 

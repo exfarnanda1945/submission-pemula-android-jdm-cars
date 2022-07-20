@@ -7,17 +7,21 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.submissiondicodingjdmcars.databinding.ActivityJdmCarDetailBinding
+import com.example.submissiondicodingjdmcars.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     private lateinit var rvCarList: RecyclerView
     private var carList: ArrayList<JdmCarsModel> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
         supportActionBar?.title = "JDM Cars Garage"
 
-        rvCarList = findViewById(R.id.rv_cars)
+        rvCarList = binding.rvCars
         rvCarList.setHasFixedSize(true)
 
         val resGetList = JdmCarsData.getCarList()
